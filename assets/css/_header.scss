@@ -1,0 +1,23 @@
+.admin-bar .headerMenu {
+    top: 46px;
+}
+@media screen and (min-width: 783px) {
+    .admin-bar .headerMenu {
+        top: 32px;
+    }
+}
+
+.headerMenu {
+    background-color: #181818;
+    position: absolute;
+    left: 0;
+    padding: 18px 0;
+    transition: 0.3s;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+
+    &.sticky {
+        position: fixed;
+    }
+}

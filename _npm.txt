@@ -1,0 +1,1 @@
+npm i @fancyapps/fancybox @fortawesome/fontawesome-free bootstrap jquery jquery-mask-plugin popper.js slick-carousel --save

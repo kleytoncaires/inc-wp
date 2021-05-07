@@ -10,3 +10,19 @@ function my_acf_json_load_point($paths)
     $paths[] = get_stylesheet_directory() . '/acf-json';
     return $paths;
 }
+
+// ----------- 
+// OPTIONS PAGAE
+// -----------
+
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Sobre a Empresa',
+        'menu_title'    => 'Sobre a Empresa',
+        'menu_slug'     => 'informacoes',
+        'capability'    => 'edit_posts',
+        'redirect'      => false,
+        'icon_url'      => 'dashicons-admin-site',
+    ));
+}

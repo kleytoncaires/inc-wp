@@ -50,9 +50,9 @@ add_action('wp_enqueue_scripts', 'google_fonts');
 // ----------- 
 // ENQUEUE STYLES
 // -----------
-function YSSY_styles()
+function inc_styles()
 {
     //wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('main', get_template_directory_uri() . '/style.min.css', array(), filemtime(get_template_directory() . '/style.min.css'), false);
 }
-add_action('wp_enqueue_scripts', 'YSSY_styles');
+add_action('wp_enqueue_scripts', 'inc_styles');

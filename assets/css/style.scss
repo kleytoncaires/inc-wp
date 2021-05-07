@@ -111,6 +111,7 @@ $image-path: "assets/img";
 $font-path: "assets/fonts";
 
 // Theme Components
-@import "bootstrap-components";
+@import "reset";
+@import "global";
 @import "header";
 @import "footer";

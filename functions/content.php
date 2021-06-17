@@ -1,6 +1,16 @@
 <?php
 
 // ----------- 
+// REMOVE STRING WHITESPACE
+// -----------
+function clean($string)
+{
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+
+    return preg_replace('/[^a-zA-Z0-9]+/', '', $string); // Removes special chars.
+}
+
+// ----------- 
 // ADD EXCERPT TO PAGES
 // -----------
 function add_excerpt_to_pages()

@@ -1,4 +1,18 @@
 $(function () {
+	// sticky header
+	window.onscroll = function () {
+		stickFunction();
+	};
+	var header = document.getElementById('headerBar');
+	var sticky = header.offsetTop;
+	function stickFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add('sticky');
+		} else {
+			header.classList.remove('sticky');
+		}
+	}
+
 	// masks
 	var maskBehavior = function (val) {
 			return val.replace(/\D/g, '').length === 11
@@ -41,18 +55,4 @@ $(function () {
 			},
 		});
 	});
-
-	// sticky header
-	window.onscroll = function () {
-		stickFunction();
-	};
-	var header = document.getElementById('headerMenu');
-	var sticky = header.offsetTop;
-	function stickFunction() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add('sticky');
-		} else {
-			header.classList.remove('sticky');
-		}
-	}
 });

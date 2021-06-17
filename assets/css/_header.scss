@@ -1,23 +1,31 @@
-.admin-bar .headerMenu {
-    top: 46px;
+.admin-bar #headerBar {
+	top: 46px;
+}
+.admin-bar #headerBar.sticky {
+	top: 0;
 }
 @media screen and (min-width: 783px) {
-    .admin-bar .headerMenu {
-        top: 32px;
-    }
+	.admin-bar #headerBar {
+		top: 32px !important;
+	}
 }
 
 .headerMenu {
-    background-color: #181818;
-    position: absolute;
-    left: 0;
-    padding: 18px 0;
-    transition: 0.3s;
-    top: 0;
-    width: 100%;
-    z-index: 20;
+	background-color: $white;
+	position: absolute;
+	left: 0;
+	transition: 0.3s;
+	top: 0;
+	width: 100%;
+	z-index: 20;
 
-    &.sticky {
-        position: fixed;
-    }
+	&.sticky {
+		position: fixed;
+	}
+}
+.navbar-brand {
+	img {
+		display: block;
+		width: 160px;
+	}
 }

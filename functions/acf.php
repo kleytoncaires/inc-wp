@@ -12,7 +12,7 @@ function my_acf_json_load_point($paths)
 }
 
 // ----------- 
-// OPTIONS PAGAE
+// OPTIONS PAGE
 // -----------
 
 if (function_exists('acf_add_options_page')) {
@@ -24,5 +24,6 @@ if (function_exists('acf_add_options_page')) {
         'capability'    => 'edit_posts',
         'redirect'      => false,
         'icon_url'      => 'dashicons-admin-site',
+        'position'      => 2
     ));
 }
